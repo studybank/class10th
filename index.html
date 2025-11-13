@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Students List</title>
+  <style>
+    /* Basic body setup */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ec6cc1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 140px;
+      background-color: #379611;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding-top: 20px;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .sidebar a:hover {
+      background-color: #2e7c0e;
+    }
+
+    /* Header */
+    header {
+      background: #7404be;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      position: fixed;
+      top: 0;
+      left: 140px;
+      right: 0;
+      z-index: 900;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 140px;
+      margin-top: 80px;
+      padding: 20px;
+      width: calc(100% - 140px);
+      box-sizing: border-box;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      overflow-x: auto;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border: 2px solid #e2e6ea;
+      white-space: nowrap; /* लाइन न टूटे */
+    }
+
+    thead th {
+      background: #f0f4f8;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #fbfdff;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .sidebar a {
+        display: inline-block;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      header {
+        position: relative;
+        left: 0;
+        width: 100%;
+      }
+
+      .main-content {
+        margin: 10px;
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+      }
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="https://studybank.github.io/home/">🏠 Home</a>
+    <a href="#about">📖 About</a>
+    <a href="#services">🛠 Services</a>
+    <a href="#gallery">🖼 Gallery</a>
+    <a href="#contact">📞 Contact</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    📚 कक्षा 9वीं से 12वीं में सत्र 2025-26 में दर्ज छात्रों की सूची 📚
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <u><h1>कक्षा 10th के छात्रों की सूची</h1></u>
+
+    <table>
+      <thead>
+        <tr>
+          <th>	SR	</th><th>	APPL.	</th><th>	ENROLLMENT	</th><th>	STUDENT NAME	</th>
+          <th>	FATHER'S NAME	</th><th>	MOTHER'S NAME	</th><th>	DOB	</th><th>	Sex	</th>
+          <th>	Cat	</th><th>	Sub	</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr>	<td>	1	</td><td>	12106378	</td><td>	A24/211035/001	</td><td>	ABHINAV KHARE	</td><td>	AJAY KHARE 	</td><td>	 NEETU KHARE	</td><td>	05-12-2010	</td><td>	M	</td><td>	GEN	</td><td>	IT	</td></tr>
+<tr>	<td>	2	</td><td>	12106379	</td><td>	A24/211035/007	</td><td>	KOUSHLENDRA PRAJAPATI	</td><td>	PREETAM 	</td><td>	 DAMYANTI	</td><td>	01-01-2011	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	3	</td><td>	12106380	</td><td>	A24/211035/016	</td><td>	RANJEET KUSHWAHA	</td><td>	RAJKUMAR KUSHWAHA 	</td><td>	 GEETA KUSHWAHA	</td><td>	15-11-2009	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	4	</td><td>	12106381	</td><td>	A24/211035/028	</td><td>	AANAND BANSHKAR	</td><td>	CHATURBHUJ 	</td><td>	 REKHA	</td><td>	04-11-2010	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	5	</td><td>	12106382	</td><td>	A24/211035/035	</td><td>	VIVEK AHIRWAR	</td><td>	GHANSHYAM AHIRWAR 	</td><td>	 SUNEETA	</td><td>	02-06-2011	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	6	</td><td>	12106383	</td><td>	A23/211035/014	</td><td>	DEEPCHANDRA AHIRWAR	</td><td>	RADHE LAL AHIRWAR 	</td><td>	 REKHA AHIRWAR	</td><td>	14-01-2008	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	7	</td><td>	12106384	</td><td>	A24/211035/006	</td><td>	PALAK PATEL	</td><td>	MONU PATEL 	</td><td>	 RUKMANI	</td><td>	22-07-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	8	</td><td>	12106385	</td><td>	A24/211035/013	</td><td>	VAISHALI KURMI	</td><td>	GHANENDRA KURMI 	</td><td>	 SHASHI	</td><td>	13-07-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	9	</td><td>	12106386	</td><td>	A24/211035/018	</td><td>	BHAWNA KURMI	</td><td>	RAJARAM 	</td><td>	 PINKI	</td><td>	21-05-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	10	</td><td>	12106388	</td><td>	A24/211035/020	</td><td>	SANJNA BANSHKAR	</td><td>	MANOJ KUMAR 	</td><td>	 LAXMI	</td><td>	14-09-2010	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	11	</td><td>	12106389	</td><td>	A24/211035/009	</td><td>	VIJAY PAL	</td><td>	DINESH PAL 	</td><td>	 SANGEETA	</td><td>	08-06-2009	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	12	</td><td>	12106390	</td><td>	A24/211035/002	</td><td>	NIKET SAHU	</td><td>	SANTOSH SAHU 	</td><td>	 SUNEETA SAHU	</td><td>	10-05-2010	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	13	</td><td>	12106392	</td><td>	A24/211035/032	</td><td>	AAYUSHI AHIRWAR	</td><td>	AMRIT AHIRWAR 	</td><td>	 MEENA DEVI	</td><td>	21-05-2011	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	14	</td><td>	12106393	</td><td>	A24/211035/026	</td><td>	HEMLATA KUSHWAHA	</td><td>	KESHAV DAS 	</td><td>	 UPASNA	</td><td>	03-07-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	15	</td><td>	12106395	</td><td>	A24/211035/014	</td><td>	YUVRAJ SINGH THAKUR	</td><td>	RAGHVENDRA SINGH JAIWAR 	</td><td>	 KAMLESH SINGH	</td><td>	28-12-2010	</td><td>	M	</td><td>	GEN	</td><td>	IT	</td></tr>
+<tr>	<td>	16	</td><td>	12106399	</td><td>	A24/211035/036	</td><td>	NITYAM NAPIT	</td><td>	DINESH 	</td><td>	 DROPTI	</td><td>	07-11-2010	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	17	</td><td>	12106400	</td><td>	A24/211035/019	</td><td>	ANKIT BHASKAR	</td><td>	RAJENDRA PRASAD 	</td><td>	 BHARTI DEVI	</td><td>	02-08-2010	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	18	</td><td>	12106401	</td><td>	A24/211035/029	</td><td>	ABHAY PRATAP YADAV	</td><td>	MALKHAN SINGH 	</td><td>	 ARTI	</td><td>	02-09-2010	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	19	</td><td>	12106402	</td><td>	A24/211035/012	</td><td>	PREETI SAHU	</td><td>	RAMKUMAR SAHU 	</td><td>	 ARCHNA SAHU	</td><td>	20-11-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	20	</td><td>	12106403	</td><td>	A24/211035/008	</td><td>	JAYPRAKASH KUSHWAHA	</td><td>	RAMPRASAD KUSHWAHA 	</td><td>	 ANJANA	</td><td>	12-03-2010	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	21	</td><td>	12106405	</td><td>	A24/211035/025	</td><td>	ASHISH KUMHAR	</td><td>	RAMPAL KUMHAR 	</td><td>	 PANA	</td><td>	23-09-2010	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	22	</td><td>	12106407	</td><td>	A24/211035/015	</td><td>	ANIRUDDHA ARJARIYA	</td><td>	SURESH KUMAR ARJARIYA 	</td><td>	 PREMILA ARJARIYA	</td><td>	13-11-2010	</td><td>	M	</td><td>	GEN	</td><td>	IT	</td></tr>
+<tr>	<td>	23	</td><td>	12106409	</td><td>	A24/211035/005	</td><td>	SUMIT KUSHWAHA	</td><td>	KAMLESH KUSHWAHA 	</td><td>	 RAJNI KUSHWAHA	</td><td>	14-04-2011	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	24	</td><td>	12106410	</td><td>	A24/211035/037	</td><td>	AAKANKSHA AHIRWAR	</td><td>	RAMKUMAR 	</td><td>	 LAXMI DEVI	</td><td>	10-07-2011	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	25	</td><td>	12106411	</td><td>	A24/211035/010	</td><td>	ANAMIKA PAL	</td><td>	YASHWANT PAL 	</td><td>	 MAMTA	</td><td>	03-07-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	26	</td><td>	12106413	</td><td>	A24/211035/039	</td><td>	LAXMI KUSHWAHA	</td><td>	NARENDRA 	</td><td>	 KIRAN	</td><td>	10-02-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	27	</td><td>	12106414	</td><td>	A24/211035/040	</td><td>	NIKITA GHOSH	</td><td>	BRASHBHAN 	</td><td>	 SEEMA	</td><td>	30-05-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	28	</td><td>	12106415	</td><td>	A24/211035/017	</td><td>	JOOLEE AHIRWAR	</td><td>	RAMKISHUN AHIRWAR 	</td><td>	 GEETA	</td><td>	07-04-2010	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	29	</td><td>	12106417	</td><td>	A24/211035/027	</td><td>	SOMVATI BANSHKAR	</td><td>	KALICHARAN 	</td><td>	 MANEESHA	</td><td>	30-07-2010	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	30	</td><td>	12106418	</td><td>	A24/211035/023	</td><td>	RAGNI PAL	</td><td>	PUSHPENDRA PAL 	</td><td>	 URMILA PAL	</td><td>	14-04-2009	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	31	</td><td>	12106421	</td><td>	A24/211035/022	</td><td>	BHAWNA PAL	</td><td>	PUSHPENDRA PAL 	</td><td>	 URMILA PAL	</td><td>	26-03-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	32	</td><td>	12106422	</td><td>	A24/211035/031	</td><td>	LAXMI DEVI PAL	</td><td>	PREMSHANKAR PAL 	</td><td>	 ROOPA DEVI	</td><td>	07-10-2009	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	33	</td><td>	12106423	</td><td>	A24/211035/024	</td><td>	SUSHMA AHIRWAR	</td><td>	LAXMAN PRASAD AHIRWAR 	</td><td>	 URMILA AHIRWAR	</td><td>	20-02-2011	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	34	</td><td>	12106424	</td><td>	A24/211035/043	</td><td>	BHAWNA KUSHWAHA	</td><td>	KASHIRAM 	</td><td>	 BHARTI	</td><td>	14-11-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	35	</td><td>	12106425	</td><td>	A24/211035/033	</td><td>	PENSHI KUMARI YADAV	</td><td>	GOPAL DAS 	</td><td>	 ANITA	</td><td>	27-01-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	36	</td><td>	12106426	</td><td>	A24/211035/021	</td><td>	PRATIGYA PAL	</td><td>	BRIJNANDAN PAL 	</td><td>	 JAYANTI PAL	</td><td>	20-01-2011	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	37	</td><td>	12106436	</td><td>	A23/211035/033	</td><td>	NAJIYA BANO	</td><td>	SHEKH RAHISH 	</td><td>	 MADEENA	</td><td>	15-05-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	38	</td><td>	12106444	</td><td>	A24/211035/011	</td><td>	KRISHNAKANT PAL	</td><td>	SURENDRA PAL 	</td><td>	 ANEETA PAL	</td><td>	11-09-2010	</td><td>	M	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	39	</td><td>	12106445	</td><td>	A23/211035/043	</td><td>	ALFIYA BANO	</td><td>	NAJIR KHAN 	</td><td>	 FATMA	</td><td>	03-06-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	40	</td><td>	12106446	</td><td>	A23/211035/045	</td><td>	ARUN PRAJAPATI	</td><td>	MEHARVAN PRAJAPATI 	</td><td>	 RANI	</td><td>	15-01-2009	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	41	</td><td>	12106447	</td><td>	A23/211035/034	</td><td>	SANJU AHIRWAR	</td><td>	LAKHAN LAL 	</td><td>	 MAYA	</td><td>	05-04-2010	</td><td>	M	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	42	</td><td>	12106448	</td><td>	A23/211035/036	</td><td>	RAKSHA KUSHWAHA	</td><td>	AYODHYA PRASAD 	</td><td>	 SHIMLA	</td><td>	13-03-2010	</td><td>	F	</td><td>	OBC	</td><td>	IT	</td></tr>
+<tr>	<td>	43	</td><td>	12106449	</td><td>	A23/211035/026	</td><td>	KAJAL AHIRWAR	</td><td>	NATHURAM 	</td><td>	 KUSUM	</td><td>	29-08-2009	</td><td>	F	</td><td>	SC	</td><td>	IT	</td></tr>
+<tr>	<td>	44	</td><td>	12106450	</td><td>	A24/211035/060	</td><td>	JAI HINDRA AHIRWAR	</td><td>	HARNARAYAN 	</td><td>	 SUMAN	</td><td>	21-03-2009	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	45	</td><td>	12106451	</td><td>	A24/211035/050	</td><td>	SHIVANGI AHIRWAR	</td><td>	HARISHCHANDRA 	</td><td>	 VIMALA	</td><td>	06-08-2010	</td><td>	F	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	46	</td><td>	12106452	</td><td>	A24/211035/081	</td><td>	LAXMI AHIRWAR	</td><td>	DAULATRAM 	</td><td>	 SUNEETA	</td><td>	12-08-2009	</td><td>	F	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	47	</td><td>	12106453	</td><td>	A24/211035/052	</td><td>	SHIVAM CHITRAKAR	</td><td>	SHYAM BABU CHITRAKAR 	</td><td>	 ROOBI	</td><td>	20-06-2011	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	48	</td><td>	12106454	</td><td>	A24/211035/064	</td><td>	ASHISH JOSHI	</td><td>	PRITAM JOSHI 	</td><td>	 RACHANA	</td><td>	26-08-2011	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	49	</td><td>	12106455	</td><td>	A24/211035/055	</td><td>	ANAND PRAJAPATI	</td><td>	PUSHPENDRA KUMAR PRAJAPATI 	</td><td>	 MUNNI	</td><td>	21-05-2010	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	50	</td><td>	12106456	</td><td>	A24/211035/056	</td><td>	NANDNEE RAJAK	</td><td>	MANGAL 	</td><td>	 MUNNI	</td><td>	27-07-2010	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	51	</td><td>	12106457	</td><td>	A24/211035/083	</td><td>	SUHANA VISHWKARMA	</td><td>	JAGDEESH VISHWKARMA 	</td><td>	 SEEEMA	</td><td>	09-06-2011	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	52	</td><td>	12106458	</td><td>	A24/211035/062	</td><td>	RADHA YADAV	</td><td>	ROOP SINGH 	</td><td>	 AJAB KUNWAR	</td><td>	11-03-2011	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	53	</td><td>	12106459	</td><td>	A24/211035/075	</td><td>	HARKUNWAR KUSHWAHA	</td><td>	PANCHAM LAL KUSHWAHA 	</td><td>	 MAMTA KUSHWAHA	</td><td>	09-02-2009	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	54	</td><td>	12106460	</td><td>	A24/211035/049	</td><td>	RUCHI AHIRWAR	</td><td>	PRAMOD AHIRWAR 	</td><td>	 JAYANTI	</td><td>	13-07-2011	</td><td>	F	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	55	</td><td>	12106461	</td><td>	A24/211035/058	</td><td>	ANSHUL AHIRWAR	</td><td>	MAHENDRA AHIRWAR 	</td><td>	 MEERA	</td><td>	08-06-2010	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	56	</td><td>	12106462	</td><td>	A24/211035/057	</td><td>	RAKHI KUSHWAHA	</td><td>	RAMSHEVAK KUSHWAHA 	</td><td>	 URMILA DEVI KUSHWAHA	</td><td>	06-08-2009	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	57	</td><td>	12106463	</td><td>	A24/211035/059	</td><td>	SATISH PRAJAPATI	</td><td>	SHIV KUMAR 	</td><td>	 RANI DEVI	</td><td>	18-07-2011	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	58	</td><td>	12106464	</td><td>	A24/211035/082	</td><td>	AVDHESH KUSHWAHA	</td><td>	MANU KUSHWAHA 	</td><td>	 MALTI KUSHWAHA	</td><td>	02-06-2009	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	59	</td><td>	12106465	</td><td>	A24/211035/079	</td><td>	HARSHIT LODHI	</td><td>	ANGESH KUMAR 	</td><td>	 NEELAM	</td><td>	09-11-2009	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	60	</td><td>	12106466	</td><td>	A24/211035/061	</td><td>	VIKAS KHANGAR	</td><td>	KAMAL KHANGAR 	</td><td>	 GAYATRI	</td><td>	20-05-2010	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	61	</td><td>	12106467	</td><td>	A24/211035/054	</td><td>	DILEEP KUMAR RAI	</td><td>	PAHALWAN RAI 	</td><td>	 ARACHANA	</td><td>	29-01-2011	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	62	</td><td>	12106468	</td><td>	A24/211035/078	</td><td>	MANMOHAN KUSHWAHA	</td><td>	KHEMCHANDRA KUSHWAHA 	</td><td>	 GANESHI KUSHWAHA	</td><td>	01-01-2012	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	63	</td><td>	12106469	</td><td>	A24/211035/063	</td><td>	DHARMENDRA KUSHWAHA	</td><td>	PRITAM KUSHWAHA 	</td><td>	 GOMATI KUSHWAHA	</td><td>	01-01-2009	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	64	</td><td>	12106470	</td><td>	A24/211035/044	</td><td>	MANOJ KUSHWAHA	</td><td>	DAYALCHAND 	</td><td>	 KAMLESH DEVI	</td><td>	02-11-2010	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	65	</td><td>	12106471	</td><td>	A24/211035/053	</td><td>	KRISHNA KHANGAR	</td><td>	RAJDHAR 	</td><td>	 RAMLALI	</td><td>	12-02-2010	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	66	</td><td>	12106472	</td><td>	A24/211035/080	</td><td>	ANUJ SAHU	</td><td>	MUKESH SAHU 	</td><td>	 RINKI SAHU	</td><td>	20-11-2010	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	67	</td><td>	12106473	</td><td>	A24/211035/088	</td><td>	VEVI BANSHKAR	</td><td>	AKHILESH 	</td><td>	 JASHODA	</td><td>	15-06-2009	</td><td>	F	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	68	</td><td>	12106474	</td><td>	A24/211035/085	</td><td>	LAVKUSH YADAV	</td><td>	RAMSINGH 	</td><td>	 PREETI	</td><td>	11-09-2010	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	69	</td><td>	12106476	</td><td>	A23/211035/081	</td><td>	SHAILENDRA AHIRWAR	</td><td>	MUKESH AHIRWAR 	</td><td>	 BHANA	</td><td>	07-11-2009	</td><td>	M	</td><td>	SC	</td><td>	AG	</td></tr>
+<tr>	<td>	70	</td><td>	12106477	</td><td>	A23/211035/050	</td><td>	ROHIT RAIKWAR	</td><td>	LAKSHMAN RAIKWAR 	</td><td>	 RAMLALI RAIKWAR	</td><td>	07-03-2008	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	71	</td><td>	12106479	</td><td>	A23/211035/058	</td><td>	KARAN KUSHWAHA	</td><td>	ANANDI KUSHWAHA 	</td><td>	 MEERA KUSHWAHA	</td><td>	03-01-2010	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	72	</td><td>	12106480	</td><td>	A23/211035/064	</td><td>	SUNEEL KUSHWAHA	</td><td>	BHOLA KUSHWAHA 	</td><td>	 MAYA KUSHWAHA	</td><td>	25-01-2009	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	73	</td><td>	12106483	</td><td>	A23/211035/072	</td><td>	ANSHI NAPIT	</td><td>	SUNIL NAPIT 	</td><td>	 SUSMA	</td><td>	11-02-2010	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	74	</td><td>	12106485	</td><td>	A22/211035/069	</td><td>	LAXMI RAJAK	</td><td>	PRABHUDYAL RAJAK 	</td><td>	 NEETU RAJAK	</td><td>	17-09-2008	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	75	</td><td>	12106487	</td><td>	A23/211035/082	</td><td>	ANSHUL PAL	</td><td>	MUKESH 	</td><td>	 SUDHA	</td><td>	29-12-2009	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	76	</td><td>	12106488	</td><td>	A23/211035/073	</td><td>	ANJO KUSHWAHA	</td><td>	RAMPRASAD KUSHWAHA 	</td><td>	 POONAM KUSHWAHA	</td><td>	02-03-2010	</td><td>	F	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	77	</td><td>	12106489	</td><td>	A23/211035/085	</td><td>	RAJKUMAR RAIKWAR	</td><td>	PARAM LAL RAIKWAR 	</td><td>	 MAYA	</td><td>	07-05-2009	</td><td>	M	</td><td>	OBC	</td><td>	AG	</td></tr>
+<tr>	<td>	78	</td><td>	12106653	</td><td>	A24/211035/090	</td><td>	RAKSHA GHOSH	</td><td>	PUSHPENDRA SINGH GHOSH 	</td><td>	 PRAVESH	</td><td>	24-08-2010	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	79	</td><td>	12106654	</td><td>	A24/211035/094	</td><td>	SACHIN SAHU	</td><td>	PRAMOD SAHU 	</td><td>	 CHANDA SAHU	</td><td>	03-02-2011	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	80	</td><td>	12106656	</td><td>	A24/211035/096	</td><td>	POOJA KUSHWAHA	</td><td>	SHIVDAYAL KUSHWAHA 	</td><td>	 RAMPYARI	</td><td>	24-12-2009	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	81	</td><td>	12106659	</td><td>	A24/211035/097	</td><td>	DROPATI KUSHWAHA	</td><td>	ASHOK KUSHWAHA 	</td><td>	 RAMSHAKHI	</td><td>	12-07-2009	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	82	</td><td>	12106660	</td><td>	A24/211035/099	</td><td>	ANKITRAJ AHIRWAR	</td><td>	HARISHCHANDRA 	</td><td>	 MAMTA	</td><td>	22-04-2011	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	83	</td><td>	12106662	</td><td>	A24/211035/101	</td><td>	CHANDANI AHIRWAR	</td><td>	LAXMAN AHIRWAR 	</td><td>	 SUKHBATI	</td><td>	30-11-2009	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	84	</td><td>	12106669	</td><td>	A24/211035/102	</td><td>	JYOTI KUSHWAHA	</td><td>	GORISHANKAR KUSHWAHA 	</td><td>	 SHEELA DEVI	</td><td>	01-09-2009	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	85	</td><td>	12106671	</td><td>	A24/211035/105	</td><td>	PRAKSHEP RAJAK	</td><td>	PRAVESH RAJAK 	</td><td>	 REKHA RAJAK	</td><td>	22-07-2011	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	86	</td><td>	12106673	</td><td>	A24/211035/107	</td><td>	SANGAM RAJPOOT	</td><td>	SAIMAN SINGH 	</td><td>	 NIRDESH	</td><td>	01-01-2010	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	87	</td><td>	12106674	</td><td>	A24/211035/108	</td><td>	DAKSH KUSHWAHA	</td><td>	HARISHCHANDRA KUSHWAHA 	</td><td>	 MANKUNWAR	</td><td>	12-02-2011	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	88	</td><td>	12106677	</td><td>	A24/211035/109	</td><td>	MAHAK YADAV	</td><td>	BHUMANI YADAV 	</td><td>	 SEETA	</td><td>	09-03-2011	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	89	</td><td>	12106678	</td><td>	A24/211035/113	</td><td>	ANSHIKA AHIRWAR	</td><td>	SWAMI PRASAD AHIRWAR 	</td><td>	 RAJKUMARI	</td><td>	07-09-2009	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	90	</td><td>	12106679	</td><td>	A24/211035/114	</td><td>	RAJ AHIRWAR	</td><td>	SWAMI PRASAD AHIRWAR 	</td><td>	 RAJKUMARI	</td><td>	20-04-2011	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	91	</td><td>	12106680	</td><td>	A24/211035/115	</td><td>	RAJENDRA KUSHWAHA	</td><td>	KISHORI KUSHWAHA 	</td><td>	 LADLI	</td><td>	01-01-2008	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	92	</td><td>	12106681	</td><td>	A24/211035/116	</td><td>	AKHLESH KUSHWAHA	</td><td>	ACHCHHE LAL 	</td><td>	 GEETA	</td><td>	08-12-2011	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	93	</td><td>	12106683	</td><td>	A24/211035/118	</td><td>	NIKITA AHIRWAR	</td><td>	MAHENDRA 	</td><td>	 ANGURI DEVI	</td><td>	28-04-2011	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	94	</td><td>	12106684	</td><td>	A24/211035/120	</td><td>	CHHAYA AHIRWAR	</td><td>	VINOD 	</td><td>	 ANGOORI	</td><td>	29-10-2010	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	95	</td><td>	12106686	</td><td>	A24/211035/124	</td><td>	NEHA AHIRWAR	</td><td>	RAMKUMAR 	</td><td>	 RAMKUNWAR	</td><td>	06-04-2010	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	96	</td><td>	12106688	</td><td>	A24/211035/129	</td><td>	DIVYA VISHWKARMA	</td><td>	GHANSHYAM 	</td><td>	 JANAK	</td><td>	11-08-2009	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	97	</td><td>	12106689	</td><td>	A24/211035/130	</td><td>	ANUSHKA YADAV	</td><td>	PREM NARAYAN 	</td><td>	 REKHA	</td><td>	24-10-2010	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	98	</td><td>	12106938	</td><td>	A24/211035/131	</td><td>	SOMYA YADAV	</td><td>	NARENDRA 	</td><td>	 KAMLESH	</td><td>	22-11-2010	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	99	</td><td>	12106940	</td><td>	A24/211035/133	</td><td>	SHEKH ISHAN	</td><td>	SHEKH AJMERI 	</td><td>	 SAKRA BANO	</td><td>	26-01-2011	</td><td>	M	</td><td>	GEN	</td><td>	SAN	</td></tr>
+<tr>	<td>	100	</td><td>	12106942	</td><td>	A24/211035/137	</td><td>	VARSHA AHIRWAR	</td><td>	VINDRAVAN 	</td><td>	 POOLA	</td><td>	05-08-2009	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	101	</td><td>	12106956	</td><td>	A23/211001/089	</td><td>	KARAN AHIRWAR	</td><td>	MANOJ AHIRWAR 	</td><td>	 RAMDEVI AHIRWAR	</td><td>	05-12-2009	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	102	</td><td>	12106960	</td><td>	A23/211035/137	</td><td>	SUMIT NAPIT	</td><td>	OMPRAKASH 	</td><td>	 RANI	</td><td>	13-10-2009	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	103	</td><td>	12106984	</td><td>	A23/211035/120	</td><td>	KAPIL KUSHWAHA	</td><td>	KAMLESH 	</td><td>	 MALTI	</td><td>	04-03-2010	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	104	</td><td>	12106987	</td><td>	A23/211035/156	</td><td>	AMOL YADAV	</td><td>	SITARAM 	</td><td>	 RAMVATI	</td><td>	17-02-2010	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	105	</td><td>	12106989	</td><td>	A23/211035/158	</td><td>	SHAHIL AHIRWAR	</td><td>	SUKHLAL 	</td><td>	 RAMKUNWAR	</td><td>	22-07-2008	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	106	</td><td>	12106993	</td><td>	A23/211035/138	</td><td>	HEMANT KUSHWAHA	</td><td>	PREMDAS 	</td><td>	 SUMITRA	</td><td>	16-09-2009	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	107	</td><td>	12106994	</td><td>	A23/211035/089	</td><td>	SAKSHAM RAJPOOT	</td><td>	SAIMAN RAJPOOT 	</td><td>	 NIRDESH	</td><td>	01-01-2008	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	108	</td><td>	12106997	</td><td>	A24/211035/149	</td><td>	SHAILENDRA AHIRWAR	</td><td>	GANESH 	</td><td>	 LADKUNWAR	</td><td>	12-03-2011	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	109	</td><td>	12107022	</td><td>	A24/211035/093	</td><td>	YOGESH AHIRWAR	</td><td>	RAVINDRA AHIRWAR 	</td><td>	 SAVITREE	</td><td>	08-02-2010	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	110	</td><td>	12107054	</td><td>	A22/211035/171	</td><td>	MAUSAM RAIKWAR	</td><td>	JAYRAM RAIKWAR 	</td><td>	 CHANDA RAIKWAR	</td><td>	01-09-2009	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	111	</td><td>	12107055	</td><td>	A23/211035/105	</td><td>	AJAY AHIRWAR	</td><td>	RAMDAS 	</td><td>	 LAXMI	</td><td>	01-01-2010	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	112	</td><td>	12107064	</td><td>	A23/211035/142	</td><td>	KRASHNA KANT KUSHWAHA	</td><td>	LAKHAN LAL 	</td><td>	 GOMTI DEVI	</td><td>	18-06-2008	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	113	</td><td>	12107066	</td><td>	A23/211035/148	</td><td>	DEEPENDRA KUSHWAHA	</td><td>	SHANKAR LAL 	</td><td>	 RAMSAKHI	</td><td>	14-05-2009	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	114	</td><td>	12107068	</td><td>	A22/211035/197	</td><td>	ABHISHEK KUMAR SEN	</td><td>	RITESH SEN 	</td><td>	 SEEMA SEN	</td><td>	10-03-2007	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	115	</td><td>	12107070	</td><td>	A23/211035/144	</td><td>	JITENDRA BELDAR	</td><td>	CHATURBHUJ 	</td><td>	 RANI	</td><td>	05-05-2010	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	116	</td><td>	12107073	</td><td>	A22/211035/123	</td><td>	HARENDRA KUSHWAHA	</td><td>	AYODHYA PRASAD KUSHWAHA 	</td><td>	 SHIMLA DEVI KUSHWAHA	</td><td>	25-07-2008	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	117	</td><td>	12107074	</td><td>	A22/211035/105	</td><td>	PRIYANKA DEVI RAJAK	</td><td>	RAMDAYAL RAJAK 	</td><td>	 GANESHI BAI RAJAK	</td><td>	15-06-2008	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	118	</td><td>	12107075	</td><td>	A22/211035/126	</td><td>	JAYPRAKASH KUSHWAHA	</td><td>	MOHAN KUSHWAHA 	</td><td>	 ARCHANA KUSHWAHA	</td><td>	03-09-2009	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	119	</td><td>	12107076	</td><td>	A22/211035/167	</td><td>	NESH RAIKWAR	</td><td>	PREETAM RAIKWAR 	</td><td>	 LAJWATI RAIKWAR	</td><td>	20-07-2007	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	120	</td><td>	12107116	</td><td>	A22/211035/149	</td><td>	MOHNI AHIRWAR	</td><td>	SITARAM AHIRWAR 	</td><td>	 SEEMA AHIRWAR	</td><td>	23-07-2009	</td><td>	F	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	121	</td><td>	12107117	</td><td>	A22/211035/205	</td><td>	SADHNA RAIKWAR	</td><td>	BHAGWAN DAS 	</td><td>	 KISHORI DEVI	</td><td>	02-09-2008	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	122	</td><td>	12107125	</td><td>	A23/211035/092	</td><td>	SOORAJ VANSHKAR	</td><td>	SHIVDAYAL 	</td><td>	 RANI	</td><td>	05-04-2009	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	123	</td><td>	12107127	</td><td>	A22/211035/174	</td><td>	RAVIKANT YADAV	</td><td>	BHAJAN LAL YADAV 	</td><td>	 AKHLESH YADAV	</td><td>	15-10-2008	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	124	</td><td>	12107129	</td><td>	A22/211035/146	</td><td>	AMAR PRAJAPATI	</td><td>	KESHAV PRAJAPATI 	</td><td>	 DAKKHAN DEVI PRAJAPATI	</td><td>	16-08-2007	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	125	</td><td>	12107131	</td><td>	A23/211035/124	</td><td>	RINKU KUMHAR	</td><td>	BABU LAL 	</td><td>	 PUSHPA	</td><td>	05-02-2009	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	126	</td><td>	12107132	</td><td>	A22/211035/164	</td><td>	SNEHA RAJAK	</td><td>	VINOD RAJAK 	</td><td>	 SUNEETA RAJAK	</td><td>	20-02-2008	</td><td>	F	</td><td>	OBC	</td><td>	SAN	</td></tr>
+<tr>	<td>	127	</td><td>	12107133	</td><td>	A22/211035/196	</td><td>	DEEPAK AHIRWAR	</td><td>	HARIDAS AHIRWAR 	</td><td>	 SHAPNA AHIRWAR	</td><td>	24-08-2009	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	128	</td><td>	12107134	</td><td>	A23/211035/116	</td><td>	DEEPAK AHIRWAR	</td><td>	DEENDAYAL 	</td><td>	 BRIJKUNWAR	</td><td>	09-08-2009	</td><td>	M	</td><td>	SC	</td><td>	SAN	</td></tr>
+<tr>	<td>	129	</td><td>	12113280	</td><td>	B25/211035/001	</td><td>	NAYAN SHARMA	</td><td>	ANIL KUMAR SHARMA 	</td><td>	 JYOTI SHARMA	</td><td>	11-01-2011	</td><td>	M	</td><td>	GEN	</td><td>	SAN	</td></tr>
+<tr>	<td>	130	</td><td>	12113286	</td><td>	A24/211181/007	</td><td>	DEEPENDRA SINGH TOMAR	</td><td>	JAISINGH TOMAR 	</td><td>	 UMA	</td><td>	03-05-2011	</td><td>	M	</td><td>	GEN	</td><td>	SAN	</td></tr>
+<tr>	<td>	131	</td><td>	12113287	</td><td>	A22/211035/107	</td><td>	ANAND KUSHWAHA	</td><td>	KHUSHILAL KUSHWAHA 	</td><td>	 RAMKALI KUSHWAHA	</td><td>	22-06-2008	</td><td>	M	</td><td>	OBC	</td><td>	SAN	</td></tr>
+
+      </tbody>
+    </table>
+
+    <footer>
+      © 2025 Sanjeev Bonda | All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
